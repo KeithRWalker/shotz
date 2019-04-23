@@ -28,12 +28,12 @@ const shootTimeClass = (shootTime) => {
 
 const domStringBuilder = () => {
   let domString = '';
-  domString += '<div class="row">';
+  domString += '<div class="row justify-content-center">';
   locations.forEach((location) => {
-    domString += `<div class="card-dark col-2 locationCard" id="${location.id}">`;
-    domString += '  <div class="card-body">';
+    domString += `<div class="card-dark col-2 locationCard mt-3" id="${location.id}">`;
     domString += `    <div class="card-header ${shootTimeClass(location.shootTime)}">${location.name}</div>`;
     domString += `    <img src="${location.imageUrl}" class="card-img-top" alt="Picture of ${location.name}">`;
+    domString += '  <div class="card-body border border-top-0">';
     domString += `    <p class="card-text">Adress: ${location.address}</p>`;
     domString += '  </div>';
     domString += '</div>';

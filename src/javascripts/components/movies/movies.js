@@ -8,7 +8,7 @@ let movies = [];
 
 const domStringBuilder = () => {
   let domString = '';
-  domString += '<div class="row">';
+  domString += '<div class="row justify-content-center">';
   movies.forEach((movie) => {
     domString += `<div class="card-dark col-2" id="${movie.id}">`;
     domString += '  <div class="card-body border">';

@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8">
@@ -9,7 +10,25 @@
   <body>
     <h1>Shotz Shotz Shotz</h1>
     <div id="app">
+
+      <h2>Movies:</h2>
       <div id="movies"></div>
+
+      <div id="filters">
+        <div class="row mt-4 mb-4">
+          <input type="text" placeholder="Search Here!" class="mx-auto">
+        </div>
+
+        <div class="row justify-content-center">
+          <button id="all" class="btn btn-primary mr-2"> All </button>
+          <button id="morning" class="btn btn-secondary mr-2"> Morning </button>
+          <button id="afternoon" class="btn btn-success mr-2"> Afternoon </button>
+          <button id="evening" class="btn btn-info mr-2"> Evening </button>
+          <button id="dark" class="btn btn-danger"> After Dark </button>
+        </div>
+      </div>
+
+      <h2>Locations:</h2>
       <div id="locations"></div>
     </div>
   </body>
